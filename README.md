@@ -3,8 +3,8 @@
 Set of Golang libraries for OpenVPN
 
 List of libraries:
-* [client/config](client/config) - client configuration file generator
-* [server/config](server/config) - server configuration file generator
+* [client/config](client/config) - Helper library for generation of a OpenVPN server configuration file
+* [server/config](server/config) - Helper library for generation of a OpenVPN client configuration file
 * [serever/mi](server/mi) - OpenVPN Management Interface library
 
 ## todo:
