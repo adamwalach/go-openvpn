@@ -7,13 +7,14 @@ import (
 )
 
 var defaultConfig = Config{
-	ServerAddress: "127.0.0.1",
-	Port:          1194,
-	Proto:         "udp",
-	Cipher:        "AES-256-CBC",
-	Keysize:       256,
-	Auth:          "SHA256",
-	Ca:            "ca.crt",
+	ServerAddress:      "127.0.0.1",
+	Port:               1194,
+	Proto:              "udp",
+	Cipher:             "AES-256-CBC",
+	Keysize:            256,
+	Auth:               "SHA256",
+	Ca:                 "ca.crt",
+	ExtraConfigOptions: "",
 }
 
 //Config model
@@ -26,9 +27,10 @@ type Config struct {
 	Cert string
 	Key  string
 
-	Cipher  string
-	Keysize int
-	Auth    string
+	Cipher             string
+	Keysize            int
+	Auth               string
+	ExtraConfigOptions string
 }
 
 //New returns config object with default values
