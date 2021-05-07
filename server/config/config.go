@@ -9,12 +9,15 @@ import (
 var defaultConfig = Config{
 	Port:                1194,
 	Proto:               "udp",
+	DNSServerOne:        "8.8.8.8",
+	DNSServerTwo:        "8.8.4.4",
 	Cipher:              "AES-256-CBC",
 	Keysize:             256,
 	Auth:                "SHA256",
 	Dh:                  "dh2048.pem",
 	Keepalive:           "10 120",
 	IfconfigPoolPersist: "ipp.txt",
+	ExtraConfigOptions:  "",
 }
 
 //Config model
@@ -35,6 +38,8 @@ type Config struct {
 	IfconfigPoolPersist string
 	Keepalive           string
 	MaxClients          int
+
+	ExtraConfigOptions string
 
 	Management string
 }
